@@ -1,73 +1,142 @@
 <!DOCTYPE html>
-<html lang="fr" class="scroll-smooth">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bello AI | L'IA vocale qui booste votre pizzeria</title>
+    <title>SAIOS | L'Assistant Vocal Intelligent pour Professionnels</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .brand-gradient { background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%); }
+        .card-shadow { box-shadow: 0 20px 50px -12px rgba(0, 0, 0, 0.1); }
+    </style>
 </head>
-<body class="bg-white text-slate-900 font-sans">
+<body class="bg-white text-slate-900 overflow-x-hidden">
 
-    <nav class="flex justify-between items-center p-6 container mx-auto">
-        <div class="text-2xl font-bold italic text-orange-600">BELLO.ai</div>
-        <div class="hidden md:flex gap-8 font-medium">
-            <a href="#fonctionnement" class="hover:text-orange-600">Fonctionnement</a>
-            <a href="#tarifs" class="hover:text-orange-600">Tarifs</a>
+    <nav class="container mx-auto px-8 py-6 flex justify-between items-center sticky top-0 bg-white/80 backdrop-blur-md z-50">
+        <div class="text-3xl font-black tracking-tighter flex items-center gap-2">
+            <span class="bg-blue-600 text-white px-2 py-0.5 rounded">S</span>AIOS
         </div>
-        <a href="#contact" class="bg-orange-600 text-white px-6 py-2 rounded-full font-bold">Contact</a>
+        <div class="hidden md:flex space-x-10 items-center font-medium text-slate-600">
+            <a href="#solutions" class="hover:text-blue-600 transition">Solutions</a>
+            <a href="#secteurs" class="hover:text-blue-600 transition">Métiers</a>
+            <a href="#tarifs" class="hover:text-blue-600 transition">Tarifs</a>
+            <button class="bg-slate-900 text-white px-7 py-3 rounded-full font-bold hover:bg-blue-600 transition shadow-lg">
+                Démo gratuite
+            </button>
+        </div>
     </nav>
 
-    <header class="container mx-auto px-6 py-16 text-center">
-        <h1 class="text-5xl md:text-7xl font-extrabold mb-6">Ne perdez plus jamais <br><span class="text-orange-600">une commande.</span></h1>
-        <p class="text-xl text-slate-600 mb-10 max-w-2xl mx-auto">Bello est l'assistant vocal intelligent qui prend vos commandes au téléphone et les affiche instantanément sur votre écran cuisine.</p>
-        
-        
-        
-        <div class="mt-8">
-            <button class="bg-slate-900 text-white px-10 py-4 rounded-xl text-lg font-bold hover:bg-slate-800">Voir la démo en live</button>
+    <section class="container mx-auto px-8 pt-20 pb-32">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight text-slate-900 mb-8">
+                Ne laissez plus vos clients tomber sur un <span class="text-blue-600">répondeur.</span>
+            </h1>
+            <p class="text-xl text-slate-500 mb-12 leading-relaxed">
+                SAIOS est le standardiste IA nouvelle génération qui décroche, qualifie et traite les demandes de vos clients en toute autonomie. **Disponible 24h/7j, avec une voix plus humaine que jamais.**
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <button class="bg-blue-600 text-white px-10 py-5 rounded-2xl font-bold text-xl hover:bg-blue-700 transition shadow-2xl shadow-blue-200">
+                    Activer mon standardiste IA
+                </button>
+                <button class="bg-slate-100 text-slate-700 px-10 py-5 rounded-2xl font-bold text-xl hover:bg-slate-200 transition">
+                    Écouter un exemple
+                </button>
+            </div>
         </div>
-    </header>
+    </section>
 
-    <section id="fonctionnement" class="py-20 bg-slate-50">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center mb-16">Comment ça marche ?</h2>
-            <div class="grid md:grid-cols-3 gap-12">
-                <div class="text-center">
-                    <div class="w-16 h-16 bg-orange-100 text-orange-600 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl"><i class="fas fa-phone"></i></div>
-                    <h3 class="text-xl font-bold mb-3">1. Bello répond</h3>
-                    <p class="text-slate-600">Une voix humaine naturelle traite l'appel, gère les stocks et suggère des desserts.</p>
+    <section id="secteurs" class="bg-slate-50 py-24">
+        <div class="container mx-auto px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">Une solution, tous les métiers.</h2>
+                <p class="text-slate-500">SAIOS s'adapte à votre expertise métier en quelques minutes.</p>
+            </div>
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="bg-white p-8 rounded-3xl card-shadow">
+                    <div class="text-blue-600 text-3xl mb-4"><i class="fa-solid fa-stethoscope"></i></div>
+                    <h4 class="font-bold text-lg mb-2">Santé</h4>
+                    <p class="text-sm text-slate-500">Gestion des rendez-vous et qualification des urgences médicales.</p>
                 </div>
-                <div class="text-center">
-                    <div class="w-16 h-16 bg-orange-100 text-orange-600 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl"><i class="fas fa-database"></i></div>
-                    <h3 class="text-xl font-bold mb-3">2. Supabase synchronise</h3>
-                    <p class="text-slate-600">La commande est traitée et enregistrée dans votre base de données en quelques millisecondes.</p>
+                <div class="bg-white p-8 rounded-3xl card-shadow">
+                    <div class="text-blue-600 text-3xl mb-4"><i class="fa-solid fa-wrench"></i></div>
+                    <h4 class="font-bold text-lg mb-2">Artisans</h4>
+                    <p class="text-sm text-slate-500">Prise de coordonnées et description du chantier pour devis immédiat.</p>
                 </div>
-                <div class="text-center">
-                    <div class="w-16 h-16 bg-orange-100 text-orange-600 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl"><i class="fas fa-tablet-alt"></i></div>
-                    <h3 class="text-xl font-bold mb-3">3. Cuisine en direct</h3>
-                    <p class="text-slate-600">La pizza s'affiche sur votre iPad en temps réel. Plus besoin de saisie manuelle.</p>
+                <div class="bg-white p-8 rounded-3xl card-shadow">
+                    <div class="text-blue-600 text-3xl mb-4"><i class="fa-solid fa-utensils"></i></div>
+                    <h4 class="font-bold text-lg mb-2">Restaurants</h4>
+                    <p class="text-sm text-slate-500">Prise de commandes et réservations de tables sans interruption du service.</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl card-shadow">
+                    <div class="text-blue-600 text-3xl mb-4"><i class="fa-solid fa-scale-balanced"></i></div>
+                    <h4 class="font-bold text-lg mb-2">Services</h4>
+                    <p class="text-sm text-slate-500">Accueil client, FAQ et redirection vers le bon interlocuteur.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="tarifs" class="py-20">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-3xl font-bold mb-16">Des tarifs simples et rentables</h2>
-            <div class="max-w-md mx-auto bg-slate-900 text-white p-8 rounded-3xl">
-                <div class="text-2xl font-bold mb-4">Pack Performance</div>
-                <div class="text-5xl font-extrabold mb-6">59€<span class="text-lg font-light text-slate-400">/mois</span></div>
-                <ul class="text-left space-y-4 mb-8">
-                    <li><i class="fas fa-check text-orange-500 mr-2"></i> Agent vocal 24/7</li>
-                    <li><i class="fas fa-check text-orange-500 mr-2"></i> Interface iPad temps réel</li>
-                    <li><i class="fas fa-check text-orange-500 mr-2"></i> Gestion des stocks</li>
-                    <li><i class="fas fa-check text-orange-500 mr-2"></i> +1€ par commande validée</li>
+    <section id="solutions" class="py-24 container mx-auto px-8">
+        <div class="grid md:grid-cols-2 gap-20 items-center">
+            <div class="relative">
+                <div class="absolute -top-10 -left-10 w-64 h-64 bg-blue-100 rounded-full blur-3xl opacity-50 -z-10"></div>
+                <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&q=80&w=800" alt="Professional Assistant" class="rounded-[40px] shadow-2xl">
+            </div>
+            <div>
+                <h2 class="text-4xl font-bold mb-8 leading-tight">Bien plus qu'un répondeur :<br>Un collaborateur virtuel.</h2>
+                <div class="space-y-8">
+                    <div class="flex gap-6">
+                        <div class="bg-blue-50 text-blue-600 p-4 rounded-2xl h-fit"><i class="fa-solid fa-comment-nodes"></i></div>
+                        <div>
+                            <h4 class="font-bold text-xl mb-1">Conversation Naturelle</h4>
+                            <p class="text-slate-500">SAIOS comprend les demandes complexes, les accents et les hésitations. Vos clients ne se sentent pas face à une machine.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6">
+                        <div class="bg-blue-50 text-blue-600 p-4 rounded-2xl h-fit"><i class="fa-solid fa-calendar-check"></i></div>
+                        <div>
+                            <h4 class="font-bold text-xl mb-1">Actions Automatisées</h4>
+                            <p class="text-slate-500">SAIOS peut inscrire un RDV dans votre agenda, enregistrer une commande ou envoyer un SMS de confirmation instantanément.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6">
+                        <div class="bg-blue-50 text-blue-600 p-4 rounded-2xl h-fit"><i class="fa-solid fa-shield-halved"></i></div>
+                        <div>
+                            <h4 class="font-bold text-xl mb-1">Filtrage des Appels</h4>
+                            <p class="text-slate-500">Fini le démarchage intempestif. SAIOS qualifie l'appelant et ne vous sollicite que pour ce qui compte vraiment.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tarifs" class="py-24 bg-slate-900 text-white">
+        <div class="container mx-auto px-8 text-center">
+            <h2 class="text-4xl font-bold mb-16">Le futur de votre accueil téléphonique.</h2>
+            <div class="max-w-md mx-auto bg-white text-slate-900 rounded-[40px] p-12 relative shadow-2xl">
+                <h3 class="text-xl font-bold uppercase tracking-widest text-blue-600 mb-4">Pack Business</h3>
+                <div class="text-6xl font-black mb-8">99€<span class="text-lg text-slate-400 font-normal"> /mois</span></div>
+                <ul class="text-left space-y-5 mb-10 border-t border-slate-100 pt-8">
+                    <li class="flex items-center gap-3 font-medium"><i class="fa-solid fa-check text-green-500"></i> Standardiste disponible 24h/24</li>
+                    <li class="flex items-center gap-3 font-medium"><i class="fa-solid fa-check text-green-500"></i> Transcription écrite des appels</li>
+                    <li class="flex items-center gap-3 font-medium"><i class="fa-solid fa-check text-green-500"></i> Envoi automatique de SMS</li>
+                    <li class="flex items-center gap-3 font-medium"><i class="fa-solid fa-check text-green-500"></i> Liaison avec votre agenda / logiciel</li>
                 </ul>
-                <button class="w-full bg-orange-600 py-4 rounded-xl font-bold">Commencer maintenant</button>
+                <button class="w-full brand-gradient text-white py-5 rounded-2xl font-bold text-xl hover:scale-105 transition shadow-xl">
+                    Essayer gratuitement
+                </button>
             </div>
+            <p class="mt-8 text-slate-400">Une mise en service rapide en 48h.</p>
         </div>
     </section>
+
+    <footer class="py-12 text-center text-slate-400 text-sm">
+        <p>© 2026 SAIOS. Tous droits réservés.</p>
+    </footer>
 
 </body>
 </html>
