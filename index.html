@@ -52,12 +52,37 @@
         </div>
     </section>
 
-    <section id="secteurs" class="bg-slate-50 py-24">
+    <section id="solutions" class="py-24 bg-white border-y border-slate-100">
         <div class="container mx-auto px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-slate-900 mb-4">Une solution, tous les métiers.</h2>
-                <p class="text-slate-500">SAIOS s'adapte à votre expertise métier en quelques minutes.</p>
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="flex gap-6">
+                    <div class="bg-blue-50 text-blue-600 p-4 rounded-2xl h-fit"><i class="fa-solid fa-comment-nodes"></i></div>
+                    <div>
+                        <h4 class="font-bold text-xl mb-2">Conversation Naturelle</h4>
+                        <p class="text-slate-500">Comprend les demandes complexes et les hésitations. Vos clients ne se sentent pas face à une machine.</p>
+                    </div>
+                </div>
+                <div class="flex gap-6">
+                    <div class="bg-blue-50 text-blue-600 p-4 rounded-2xl h-fit"><i class="fa-solid fa-calendar-check"></i></div>
+                    <div>
+                        <h4 class="font-bold text-xl mb-2">Actions Automatisées</h4>
+                        <p class="text-slate-500">Inscrit les RDV dans votre agenda, enregistre les commandes ou envoie des SMS instantanément.</p>
+                    </div>
+                </div>
+                <div class="flex gap-6">
+                    <div class="bg-blue-50 text-blue-600 p-4 rounded-2xl h-fit"><i class="fa-solid fa-shield-halved"></i></div>
+                    <div>
+                        <h4 class="font-bold text-xl mb-2">Filtrage des Appels</h4>
+                        <p class="text-slate-500">Fini le démarchage. SAIOS qualifie l'appelant et ne vous sollicite que pour ce qui compte vraiment.</p>
+                    </div>
+                </div>
             </div>
+        </div>
+    </section>
+
+    <section id="secteurs" class="bg-slate-50 py-24">
+        <div class="container mx-auto px-8 text-center">
+            <h2 class="text-3xl font-bold text-slate-900 mb-12">Une solution, tous les métiers.</h2>
             <div class="grid md:grid-cols-3 lg:grid-cols-5 gap-6">
                 <div class="bg-white p-6 rounded-3xl card-shadow">
                     <div class="text-blue-600 text-3xl mb-4"><i class="fa-solid fa-stethoscope"></i></div>
@@ -96,43 +121,85 @@
             </div>
             
             <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                <div class="bg-white text-slate-900 rounded-[40px] p-10 shadow-2xl border-4 border-transparent hover:border-blue-500 transition">
+                <div class="bg-white text-slate-900 rounded-[40px] p-10 shadow-2xl flex flex-col">
                     <h3 class="text-lg font-bold uppercase tracking-widest text-blue-600 mb-2">Standard</h3>
                     <div class="text-5xl font-black mb-6">99€<span class="text-lg text-slate-400 font-normal"> /mois</span></div>
-                    <ul class="text-left space-y-4 mb-10 border-t border-slate-100 pt-6">
+                    <ul class="text-left space-y-4 mb-10 border-t border-slate-100 pt-6 flex-grow">
                         <li class="flex items-center gap-3"><i class="fa-solid fa-check text-green-500"></i> 300 min incluses</li>
                         <li class="flex items-center gap-3"><i class="fa-solid fa-check text-green-500"></i> Dispo 24h/24</li>
                         <li class="flex items-center gap-3"><i class="fa-solid fa-check text-green-500"></i> Liaison Agenda/BDD</li>
                         <li class="flex items-center gap-3"><i class="fa-solid fa-check text-green-500"></i> Écran de supervision</li>
                     </ul>
+                    <a href="#contact" class="block w-full text-center bg-slate-900 text-white py-4 rounded-2xl font-bold hover:bg-blue-600 transition">Choisir</a>
                 </div>
 
-                <div class="bg-white text-slate-900 rounded-[40px] p-10 shadow-2xl border-4 border-blue-500 relative transform scale-105">
+                <div class="bg-white text-slate-900 rounded-[40px] p-10 shadow-2xl border-4 border-blue-500 relative transform scale-105 flex flex-col">
                     <span class="absolute -top-5 left-1/2 -translate-x-1/2 bg-blue-600 text-white px-4 py-1 rounded-full text-sm font-bold uppercase">Populaire</span>
                     <h3 class="text-lg font-bold uppercase tracking-widest text-blue-600 mb-2">Business</h3>
                     <div class="text-5xl font-black mb-6">199€<span class="text-lg text-slate-400 font-normal"> /mois</span></div>
-                    <ul class="text-left space-y-4 mb-10 border-t border-slate-100 pt-6">
+                    <ul class="text-left space-y-4 mb-10 border-t border-slate-100 pt-6 flex-grow">
                         <li class="flex items-center gap-3 font-bold text-blue-600"><i class="fa-solid fa-plus"></i> Pack 99€ +</li>
                         <li class="flex items-center gap-3 font-semibold"><i class="fa-solid fa-check text-green-500"></i> 10h d'appels incluses</li>
                         <li class="flex items-center gap-3"><i class="fa-solid fa-check text-green-500"></i> Support prioritaire</li>
                     </ul>
+                    <a href="#contact" class="block w-full text-center bg-blue-600 text-white py-4 rounded-2xl font-bold hover:bg-blue-700 transition shadow-lg">Choisir</a>
                 </div>
 
-                <div class="bg-white text-slate-900 rounded-[40px] p-10 shadow-2xl border-4 border-transparent hover:border-blue-500 transition">
+                <div class="bg-white text-slate-900 rounded-[40px] p-10 shadow-2xl flex flex-col">
                     <h3 class="text-lg font-bold uppercase tracking-widest text-blue-600 mb-2">Premium</h3>
                     <div class="text-5xl font-black mb-6">499€<span class="text-lg text-slate-400 font-normal"> /mois</span></div>
-                    <ul class="text-left space-y-4 mb-10 border-t border-slate-100 pt-6">
+                    <ul class="text-left space-y-4 mb-10 border-t border-slate-100 pt-6 flex-grow">
                         <li class="flex items-center gap-3 font-bold text-blue-600"><i class="fa-solid fa-plus"></i> Pack 99€ +</li>
                         <li class="flex items-center gap-3 font-semibold"><i class="fa-solid fa-check text-green-500"></i> Jusqu'à 40h d'appels</li>
                         <li class="flex items-center gap-3"><i class="fa-solid fa-check text-green-500"></i> Accompagnement sur mesure</li>
                     </ul>
+                    <a href="#contact" class="block w-full text-center bg-slate-900 text-white py-4 rounded-2xl font-bold hover:bg-blue-600 transition">Choisir</a>
                 </div>
             </div>
-            <p class="mt-12 text-slate-400 text-center italic">Mise en service rapide en 48h.</p>
         </div>
     </section>
 
-    <footer class="py-12 text-center text-slate-400 text-sm">
+    <section id="contact" class="py-24 bg-white">
+        <div class="container mx-auto px-8 max-w-3xl">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-slate-900 mb-4">Démarrez avec SAIOS</h2>
+                <p class="text-slate-500">Complétez ce formulaire, notre équipe vous recontactera sous 48h.</p>
+            </div>
+            <form class="grid grid-cols-1 md:grid-cols-2 gap-6 bg-slate-50 p-8 md:p-12 rounded-[40px] border border-slate-100">
+                <div class="flex flex-col gap-2">
+                    <label class="font-semibold text-sm ml-2">Nom</label>
+                    <input type="text" placeholder="Dupont" class="px-6 py-4 rounded-2xl border border-slate-200 focus:border-blue-500 outline-none transition">
+                </div>
+                <div class="flex flex-col gap-2">
+                    <label class="font-semibold text-sm ml-2">Prénom</label>
+                    <input type="text" placeholder="Jean" class="px-6 py-4 rounded-2xl border border-slate-200 focus:border-blue-500 outline-none transition">
+                </div>
+                <div class="flex flex-col gap-2">
+                    <label class="font-semibold text-sm ml-2">Société</label>
+                    <input type="text" placeholder="Ma Société SAS" class="px-6 py-4 rounded-2xl border border-slate-200 focus:border-blue-500 outline-none transition">
+                </div>
+                <div class="flex flex-col gap-2">
+                    <label class="font-semibold text-sm ml-2">Adresse mail *</label>
+                    <input type="email" required placeholder="contact@exemple.com" class="px-6 py-4 rounded-2xl border border-slate-200 focus:border-blue-500 outline-none transition shadow-sm">
+                </div>
+                <div class="flex flex-col gap-2">
+                    <label class="font-semibold text-sm ml-2">Numéro de téléphone</label>
+                    <input type="tel" placeholder="06 00 00 00 00" class="px-6 py-4 rounded-2xl border border-slate-200 focus:border-blue-500 outline-none transition">
+                </div>
+                <div class="flex flex-col gap-2">
+                    <label class="font-semibold text-sm ml-2">Type de service / métier</label>
+                    <input type="text" placeholder="ex: Restaurant, Coiffeur..." class="px-6 py-4 rounded-2xl border border-slate-200 focus:border-blue-500 outline-none transition">
+                </div>
+                <div class="md:col-span-2 mt-4">
+                    <button type="submit" class="w-full brand-gradient text-white py-5 rounded-2xl font-bold text-xl hover:scale-[1.02] transition shadow-xl">
+                        Envoyer ma demande
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="py-12 text-center text-slate-400 text-sm border-t border-slate-100">
         <p>© 2026 SAIOS. Tous droits réservés.</p>
     </footer>
 
