@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; }
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
         .brand-gradient { background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%); }
         .card-shadow { box-shadow: 0 20px 50px -12px rgba(0, 0, 0, 0.1); }
     </style>
@@ -20,30 +20,34 @@
             <span class="bg-blue-600 text-white px-2 py-0.5 rounded">S</span>AIOS
         </div>
         <div class="hidden md:flex space-x-10 items-center font-medium text-slate-600">
-            <a href="#solutions" class="hover:text-blue-600 transition">Solutions</a>
             <a href="#secteurs" class="hover:text-blue-600 transition">Métiers</a>
+            <a href="#solutions" class="hover:text-blue-600 transition">Solutions</a>
             <a href="#tarifs" class="hover:text-blue-600 transition">Tarifs</a>
-            <button class="bg-slate-900 text-white px-7 py-3 rounded-full font-bold hover:bg-blue-600 transition shadow-lg">
-                Démo gratuite
-            </button>
         </div>
     </nav>
 
     <section class="container mx-auto px-8 pt-20 pb-32">
         <div class="max-w-4xl mx-auto text-center">
-            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight text-slate-900 mb-8">
-                Ne manquez plus aucun <span class="text-blue-600"> appel.</span>
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight text-slate-900 mb-6">
+                Ne manquez plus aucun <span class="text-blue-600">appel.</span>
             </h1>
-            <p class="text-xl text-slate-500 mb-12 leading-relaxed">
-                SAIOS est le standardiste IA nouvelle génération qui décroche, qualifie et traite les demandes de vos clients en toute autonomie. **Disponible 24h/7j, avec une voix plus humaine que jamais.**
-            </p>
+            <h2 class="text-2xl md:text-3xl font-semibold text-slate-600 mb-10">
+                Ne laissez plus vos clients tomber sur un répondeur.
+            </h2>
+            
+            <div class="bg-blue-50 border border-blue-100 p-8 rounded-[32px] mb-12">
+                <p class="text-xl md:text-2xl text-slate-800 leading-relaxed">
+                    SAIOS est le <span class="font-bold text-blue-600">standardiste IA nouvelle génération</span> qui décroche, qualifie et traite les demandes de vos clients en toute autonomie.
+                </p>
+                <p class="text-xl mt-4 font-extrabold text-slate-900">
+                    Disponible 24h/7j, avec une voix plus humaine que jamais.
+                </p>
+            </div>
+
             <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <button class="bg-blue-600 text-white px-10 py-5 rounded-2xl font-bold text-xl hover:bg-blue-700 transition shadow-2xl shadow-blue-200">
+                <a href="#tarifs" class="bg-blue-600 text-white px-10 py-5 rounded-2xl font-bold text-xl hover:bg-blue-700 transition shadow-2xl shadow-blue-200 text-center">
                     Activer mon standardiste IA
-                </button>
-                <button class="bg-slate-100 text-slate-700 px-10 py-5 rounded-2xl font-bold text-xl hover:bg-slate-200 transition">
-                    Écouter un exemple
-                </button>
+                </a>
             </div>
         </div>
     </section>
@@ -54,83 +58,77 @@
                 <h2 class="text-3xl font-bold text-slate-900 mb-4">Une solution, tous les métiers.</h2>
                 <p class="text-slate-500">SAIOS s'adapte à votre expertise métier en quelques minutes.</p>
             </div>
-            <div class="grid md:grid-cols-4 gap-8">
-                <div class="bg-white p-8 rounded-3xl card-shadow">
+            <div class="grid md:grid-cols-3 lg:grid-cols-5 gap-6">
+                <div class="bg-white p-6 rounded-3xl card-shadow">
                     <div class="text-blue-600 text-3xl mb-4"><i class="fa-solid fa-stethoscope"></i></div>
                     <h4 class="font-bold text-lg mb-2">Santé</h4>
-                    <p class="text-sm text-slate-500">Gestion des rendez-vous et qualification des urgences médicales.</p>
+                    <p class="text-sm text-slate-500">Rendez-vous et urgences médicales.</p>
                 </div>
-                <div class="bg-white p-8 rounded-3xl card-shadow">
+                <div class="bg-white p-6 rounded-3xl card-shadow">
+                    <div class="text-blue-600 text-3xl mb-4"><i class="fa-solid fa-scissors"></i></div>
+                    <h4 class="font-bold text-lg mb-2">Coiffeurs</h4>
+                    <p class="text-sm text-slate-500">Réservations et gestion des créneaux.</p>
+                </div>
+                <div class="bg-white p-6 rounded-3xl card-shadow">
                     <div class="text-blue-600 text-3xl mb-4"><i class="fa-solid fa-wrench"></i></div>
                     <h4 class="font-bold text-lg mb-2">Artisans</h4>
-                    <p class="text-sm text-slate-500">Prise de coordonnées et description du chantier pour devis immédiat.</p>
+                    <p class="text-sm text-slate-500">Qualification et devis immédiat.</p>
                 </div>
-                <div class="bg-white p-8 rounded-3xl card-shadow">
+                <div class="bg-white p-6 rounded-3xl card-shadow">
                     <div class="text-blue-600 text-3xl mb-4"><i class="fa-solid fa-utensils"></i></div>
                     <h4 class="font-bold text-lg mb-2">Restaurants</h4>
-                    <p class="text-sm text-slate-500">Prise de commandes et réservations de tables sans interruption du service.</p>
+                    <p class="text-sm text-slate-500">Commandes et réservations de tables.</p>
                 </div>
-                <div class="bg-white p-8 rounded-3xl card-shadow">
+                <div class="bg-white p-6 rounded-3xl card-shadow">
                     <div class="text-blue-600 text-3xl mb-4"><i class="fa-solid fa-scale-balanced"></i></div>
                     <h4 class="font-bold text-lg mb-2">Services</h4>
-                    <p class="text-sm text-slate-500">Accueil client, FAQ et redirection vers le bon interlocuteur.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="solutions" class="py-24 container mx-auto px-8">
-        <div class="grid md:grid-cols-2 gap-20 items-center">
-            <div class="relative">
-                <div class="absolute -top-10 -left-10 w-64 h-64 bg-blue-100 rounded-full blur-3xl opacity-50 -z-10"></div>
-                <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&q=80&w=800" alt="Professional Assistant" class="rounded-[40px] shadow-2xl">
-            </div>
-            <div>
-                <h2 class="text-4xl font-bold mb-8 leading-tight">Bien plus qu'un répondeur :<br>Un collaborateur virtuel.</h2>
-                <div class="space-y-8">
-                    <div class="flex gap-6">
-                        <div class="bg-blue-50 text-blue-600 p-4 rounded-2xl h-fit"><i class="fa-solid fa-comment-nodes"></i></div>
-                        <div>
-                            <h4 class="font-bold text-xl mb-1">Conversation Naturelle</h4>
-                            <p class="text-slate-500">SAIOS comprend les demandes complexes, les accents et les hésitations. Vos clients ne se sentent pas face à une machine.</p>
-                        </div>
-                    </div>
-                    <div class="flex gap-6">
-                        <div class="bg-blue-50 text-blue-600 p-4 rounded-2xl h-fit"><i class="fa-solid fa-calendar-check"></i></div>
-                        <div>
-                            <h4 class="font-bold text-xl mb-1">Actions Automatisées</h4>
-                            <p class="text-slate-500">SAIOS peut inscrire un RDV dans votre agenda, enregistrer une commande ou envoyer un SMS de confirmation instantanément.</p>
-                        </div>
-                    </div>
-                    <div class="flex gap-6">
-                        <div class="bg-blue-50 text-blue-600 p-4 rounded-2xl h-fit"><i class="fa-solid fa-shield-halved"></i></div>
-                        <div>
-                            <h4 class="font-bold text-xl mb-1">Filtrage des Appels</h4>
-                            <p class="text-slate-500">Fini le démarchage intempestif. SAIOS qualifie l'appelant et ne vous sollicite que pour ce qui compte vraiment.</p>
-                        </div>
-                    </div>
+                    <p class="text-sm text-slate-500">FAQ et accueil client premium.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="tarifs" class="py-24 bg-slate-900 text-white">
-        <div class="container mx-auto px-8 text-center">
-            <h2 class="text-4xl font-bold mb-16">Le futur de votre accueil téléphonique.</h2>
-            <div class="max-w-md mx-auto bg-white text-slate-900 rounded-[40px] p-12 relative shadow-2xl">
-                <h3 class="text-xl font-bold uppercase tracking-widest text-blue-600 mb-4">Pack Business</h3>
-                <div class="text-6xl font-black mb-8">99€<span class="text-lg text-slate-400 font-normal"> /mois</span></div>
-                <ul class="text-left space-y-5 mb-10 border-t border-slate-100 pt-8">
-                    <li class="flex items-center gap-3 font-medium"><i class="fa-solid fa-check text-green-500"></i> Standardiste disponible 24h/24</li>
-                    <li class="flex items-center gap-3 font-medium"><i class="fa-solid fa-check text-green-500"></i> Transcription écrite des appels</li>
-                    <li class="flex items-center gap-3 font-medium"><i class="fa-solid fa-check text-green-500"></i> Envoi automatique de SMS</li>
-                    <li class="flex items-center gap-3 font-medium"><i class="fa-solid fa-check text-green-500"></i> Liaison avec votre agenda / logiciel</li>
-                </ul>
-                <button class="w-full brand-gradient text-white py-5 rounded-2xl font-bold text-xl hover:scale-105 transition shadow-xl">
-                    Essayer gratuitement
-                </button>
+        <div class="container mx-auto px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Le futur de votre accueil téléphonique.</h2>
+                <p class="text-slate-400">Choisissez le pack adapté à votre volume d'appels.</p>
             </div>
-            <p class="mt-8 text-slate-400">Une mise en service rapide en 48h.</p>
+            
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="bg-white text-slate-900 rounded-[40px] p-10 shadow-2xl border-4 border-transparent hover:border-blue-500 transition">
+                    <h3 class="text-lg font-bold uppercase tracking-widest text-blue-600 mb-2">Standard</h3>
+                    <div class="text-5xl font-black mb-6">99€<span class="text-lg text-slate-400 font-normal"> /mois</span></div>
+                    <ul class="text-left space-y-4 mb-10 border-t border-slate-100 pt-6">
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-green-500"></i> 300 min incluses</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-green-500"></i> Dispo 24h/24</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-green-500"></i> Liaison Agenda/BDD</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-green-500"></i> Écran de supervision</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white text-slate-900 rounded-[40px] p-10 shadow-2xl border-4 border-blue-500 relative transform scale-105">
+                    <span class="absolute -top-5 left-1/2 -translate-x-1/2 bg-blue-600 text-white px-4 py-1 rounded-full text-sm font-bold uppercase">Populaire</span>
+                    <h3 class="text-lg font-bold uppercase tracking-widest text-blue-600 mb-2">Business</h3>
+                    <div class="text-5xl font-black mb-6">199€<span class="text-lg text-slate-400 font-normal"> /mois</span></div>
+                    <ul class="text-left space-y-4 mb-10 border-t border-slate-100 pt-6">
+                        <li class="flex items-center gap-3 font-bold text-blue-600"><i class="fa-solid fa-plus"></i> Pack 99€ +</li>
+                        <li class="flex items-center gap-3 font-semibold"><i class="fa-solid fa-check text-green-500"></i> 10h d'appels incluses</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-green-500"></i> Support prioritaire</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white text-slate-900 rounded-[40px] p-10 shadow-2xl border-4 border-transparent hover:border-blue-500 transition">
+                    <h3 class="text-lg font-bold uppercase tracking-widest text-blue-600 mb-2">Premium</h3>
+                    <div class="text-5xl font-black mb-6">499€<span class="text-lg text-slate-400 font-normal"> /mois</span></div>
+                    <ul class="text-left space-y-4 mb-10 border-t border-slate-100 pt-6">
+                        <li class="flex items-center gap-3 font-bold text-blue-600"><i class="fa-solid fa-plus"></i> Pack 99€ +</li>
+                        <li class="flex items-center gap-3 font-semibold"><i class="fa-solid fa-check text-green-500"></i> Jusqu'à 40h d'appels</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-green-500"></i> Accompagnement sur mesure</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="mt-12 text-slate-400 text-center italic">Mise en service rapide en 48h.</p>
         </div>
     </section>
 
