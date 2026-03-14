@@ -244,12 +244,12 @@
                         <input type="text" name="societe" placeholder="Ma Société SAS" class="px-6 py-4 rounded-2xl border border-slate-200 focus:border-blue-600 outline-none transition">
                     </div>
                     <div class="flex flex-col gap-2">
-                        <label class="font-semibold text-sm ml-2">Adresse mail *</label>
-                        <input type="email" name="email" required placeholder="contact@exemple.com" class="px-6 py-4 rounded-2xl border border-slate-200 focus:border-blue-600 outline-none transition shadow-sm">
+                        <label class="font-semibold text-sm ml-2">Adresse mail</label>
+                        <input type="email" name="email" id="field-email" placeholder="contact@exemple.com" class="px-6 py-4 rounded-2xl border border-slate-200 focus:border-blue-600 outline-none transition shadow-sm">
                     </div>
                     <div class="flex flex-col gap-2">
                         <label class="font-semibold text-sm ml-2">Numéro de téléphone</label>
-                        <input type="tel" name="telephone" placeholder="06 00 00 00 00" class="px-6 py-4 rounded-2xl border border-slate-200 focus:border-blue-600 outline-none transition">
+                        <input type="tel" name="telephone" id="field-phone" placeholder="06 00 00 00 00" class="px-6 py-4 rounded-2xl border border-slate-200 focus:border-blue-600 outline-none transition">
                     </div>
                     <div class="flex flex-col gap-2">
                         <label class="font-semibold text-sm ml-2">Type de service / métier</label>
@@ -284,11 +284,20 @@
       const form = document.getElementById('contact-form');
       const btn = document.getElementById('submit-btn');
       const successMsg = document.getElementById('success-message');
+      
+      // Récupération des deux champs de contact pour la vérification
+      const emailField = document.getElementById('field-email');
+      const phoneField = document.getElementById('field-phone');
 
       form.addEventListener('submit', e => {
         e.preventDefault();
+
+        // VERIFICATION : Au moins un des deux champs doit être rempli
+        if (!emailField.value.trim() && !phoneField.value.trim()) {
+            alert("Veuillez renseigner au moins une adresse email ou un numéro de téléphone pour être recontacté.");
+            return; // On arrête l'envoi ici
+        }
         
-        // Effet visuel immédiat sur le bouton
         btn.disabled = true;
         btn.innerHTML = '<i class="fa-solid fa-circle-notch animate-spin mr-3"></i> Envoi en cours...';
         
@@ -297,16 +306,14 @@
         fetch('https://script.google.com/macros/s/AKfycbwkYg7PuEiitmTXfNd-PRQz4HwlTLz-9s5F2KEHbgD2Do4OZ9F7I3cP6NQoc_4xRe6VlA/exec', {
           method: 'POST',
           body: formData,
-          mode: 'no-cors' // Ajouté pour garantir la compatibilité
+          mode: 'no-cors'
         })
         .then(() => {
-            // Animation de disparition du formulaire
             form.classList.add('opacity-0', 'pointer-events-none');
             
             setTimeout(() => {
                 form.style.display = 'none';
                 successMsg.classList.remove('hidden');
-                // Scroll doux vers le message de succès
                 successMsg.scrollIntoView({ behavior: 'smooth', block: 'center' });
             }, 300);
         })
